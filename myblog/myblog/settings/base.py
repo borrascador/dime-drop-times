@@ -40,7 +40,8 @@ PREREQ_APPS = [
 ]
 
 PROJECT_APPS = [
-    # Project Apps go here
+    'blog',
+    'users',
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
