@@ -25,7 +25,9 @@ SECRET_KEY = 'f3f5e5%_z0pbewy-cirfk+af8xp^%=khta+fya36tn6wy95m8@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'borrascador.pythonanywhere.com',
+]
 
 
 # Application definition
