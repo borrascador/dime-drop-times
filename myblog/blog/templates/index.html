@@ -1,15 +1,26 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% load staticfiles %}
 <html lang="en">
-<head>
-    <title>Dime Drop Times</title>
-</head>
-<body>
-    <h1>Dime Drop Times</h1>
-    {% block navigation %}{% endblock %}    
-	{% block content %}{% endblock %}
-	{% block footer %}
-	<hr>
-	<p>Thanks for visiting my site.</p>
-	{% endblock %}
-</body>
+    <head>
+        <title>Dime Drop Times</title>
+    </head>
+    <body>
+        <h1>Dime Drop Times</h1>
+        {% block navigation %}
+        {% endblock %}
+        
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        
+        {% block footer %}
+        <hr>
+        <p>Thanks for visiting my site.</p>
+        {% endblock %}
+    </body>
 </html>
