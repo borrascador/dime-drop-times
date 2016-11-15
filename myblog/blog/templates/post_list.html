@@ -6,8 +6,8 @@
             <div class="date">
                 {{ post.created_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h2><a href="">{{ post.title }}</a></h1>
+            <p class="text">{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
 {% endblock %}
