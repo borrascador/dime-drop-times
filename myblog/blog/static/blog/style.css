@@ -10,14 +10,26 @@ h1 {
   font-size: 50px;
 }
 
-div.content-container {
+div.header {
   background: #fff;
   margin: 0 auto;
   width: 300px;
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 75px;
-  padding-left: 50px;
+  padding: 10px 50px 10px 50px;
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+}
+
+div.content-container {
+  background: #fff;
+  margin: 50px auto;
+  width: 300px;
+  padding: 0px 50px 50px 50px;
   /* border-radius */
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -29,5 +41,5 @@ div.content-container {
 }
 
 div.post {
-  padding-top: 75px;
+  padding-top: 50px;
 }

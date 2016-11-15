@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, DetailView
-from django.utils import timezone
+from django.views.generic import ListView, DetailView
 from .models import Post
 
-class HomeView(TemplateView):
-    template_name = "post_list.html"
-
-    def posts(self):
-        return Post.objects.all()
+class HomeView(ListView):
+    model = Post
+    template_name = "blog/post_list.html"
+    
+class PostView(DetailView):
+    model = Post
+    template_name = "blog/post_detail.html"

@@ -4,12 +4,14 @@
 <html lang="en">
     <head>
         <title>Dime Drop Times</title>
-        <link rel=StyleSheet href="static/base.css" type="text/css" media=screen>
+        <link rel=StyleSheet type="text/css" href="{% static 'blog/style.css' %}"  media=screen>
     </head>
     <body>
-        <h1>Dime Drop Times</h1>
-        {% block navigation %}
-        {% endblock %}
+        <div class="header">
+            <h1>Dime Drop Times</h1>
+            {% block navigation %}
+            {% endblock %}
+        </div>
         
         <div class="content-container">
             <div class="row">

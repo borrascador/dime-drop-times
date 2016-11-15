@@ -1,12 +1,12 @@
-{% extends 'index.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in view.posts %}
+    {% for post in post_list %}
         <div class="post">
             <div class="date">
                 {{ post.created_date }}
             </div>
-            <h2><a href="">{{ post.title }}</a></h1>
+            <h2><a href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h1>
             <p class="text">{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
