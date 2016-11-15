@@ -61,11 +61,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myblog.urls'
 
+import os.path
+Temp_Path = os.path.realpath('.')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates',
+            Temp_Path + '/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
