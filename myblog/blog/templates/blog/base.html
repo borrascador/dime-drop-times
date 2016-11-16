@@ -2,28 +2,46 @@
 {% load static %}
 
 <html lang="en">
+
     <head>
         <title>Dime Drop Times</title>
         <link rel=StyleSheet type="text/css" href="{% static 'blog/style.css' %}"  media=screen>
     </head>
+    
     <body>
-        <div class="header">
+    
+        <div class="header-container">
             <h1>Dime Drop Times</h1>
+              
+            <div class="nav-bar">
+                <h2>
+                    <a>Archive</a>
+                    <span> | <span>
+                    <a>Videos</a>
+                    <span> | <span>
+                    <a>Portfolio</a>
+                    <span> | <span>
+                    <a>Contact</a>
+                    <span> | <span>
+                    <a>About</a>
+                </h2>
+            </div>
+            
             {% block navigation %}
             {% endblock %}
         </div>
         
         <div class="content-container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
-            </div>
+            {% block content %}
+            {% endblock %}
         </div>
         
-        {% block footer %}
-        <p>Thanks for visiting my site.</p>
-        {% endblock %}
+        <div class="footer-container">
+            {% block footer %}
+            <p id="footer-text">Thanks for visiting my site.</p>
+            {% endblock %} 
+        </div>
+        
     </body>
+    
 </html>
