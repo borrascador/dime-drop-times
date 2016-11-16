@@ -6,7 +6,7 @@
             <div class="date">
                 <p>{{ post.created_date }}</p>
             </div>
-            <h2><a href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h2><a class="title" href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h2>
             <p class="text">{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
