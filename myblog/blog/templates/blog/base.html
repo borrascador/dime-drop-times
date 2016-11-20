@@ -6,14 +6,15 @@
     <head>
         <title>Dime Drop Times</title>
         <link rel=StyleSheet type="text/css" href="{% static 'blog/style.css' %}"  media=screen>
+        <script type="text/javascript" src="{% static 'blog/masonry.pkgd.js' %}"></script>
     </head>
     
     <body>
         
-        <div id="rectangle-left"></div>
+<!--         <div id="rectangle-left"></div>
         <div id="triangle-left"></div>
         <div id="rectangle-right"></div>
-        <div id="triangle-right"></div>
+        <div id="triangle-right"></div> -->
     
         <div class="header-container">
             <h1>dime drop times</h1>
@@ -37,7 +38,9 @@
             {% endblock %}
         </div>
         
-        <div class="content-container">
+        <div class="grid" data-masonry='{ "fitWidth": "true", "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "gutter": ".gutter-sizer",  "percentPosition": "true" }'>
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
             {% block content %}
             {% endblock %}
         </div>
