@@ -11,39 +11,39 @@
     
     <body>
         
-<!--         <div id="rectangle-left"></div>
+<!--    <div id="rectangle-left"></div>
         <div id="triangle-left"></div>
         <div id="rectangle-right"></div>
         <div id="triangle-right"></div> -->
     
         <div class="header-container">
-            <h1>dime drop times</h1>
+            <h1>
+                <a href="{% url 'HomeView' %}">
+                    <span id="dime">dime</span>
+                    <br>
+                    <span id="drop">drop</span>
+                    <br>
+                    <span id="times">times</span>
+                </a>
+            </h1>
             
-            <!-- TO DO: Implement block version of nav-bar and working links to other parts of the site -->
             <div class="nav-bar">
                 <h2>
-                    <a class="nav">archive</a>
-                    <span> | <span>
-                    <a class="nav">videos</a>
-                    <span> | <span>
-                    <a class="nav">portfolio</a>
-                    <span> | <span>
-                    <a class="nav">contact</a>
-                    <span> | <span>
-                    <a class="nav">about</a>
+                    <a>archive</a>
+                    <span>|</span>
+                    <a>videos</a>
+                    <span>|</span>
+                    <a>portfolio</a>
+                    <span>|</span>
+                    <a>contact</a>
+                    <span>|</span>
+                    <a>about</a>
                 </h2>
             </div>
-            
-            {% block navigation %}
-            {% endblock %}
         </div>
         
-        <div class="grid" data-masonry='{ "fitWidth": "true", "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "gutter": ".gutter-sizer",  "percentPosition": "true" }'>
-            <div class="grid-sizer"></div>
-            <div class="gutter-sizer"></div>
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
         
         <div class="footer-container">
             {% block footer %}

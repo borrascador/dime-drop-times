@@ -1,13 +1,23 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in post_list %}
-        <div class="grid-item">
-            <div class="date">
-                <p>{{ post.created_date }}</p>
+    <div class="grid" data-masonry='{ 
+        "fitWidth": "true", 
+        "itemSelector": ".grid-item", 
+        "columnWidth": ".grid-sizer", 
+        "gutter": ".gutter-sizer",  
+        "percentPosition": "true" 
+    }'>
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        {% for post in post_list %}
+            <div class="grid-item">
+                <div class="date">
+                    <p>{{ post.created_date }}</p>
+                </div>
+                <h2><a class="title" href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h2>
+                <p class="text">{{ post.text|linebreaksbr }}</p>
             </div>
-            <h2><a class="title" href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p class="text">{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 {% endblock %}
