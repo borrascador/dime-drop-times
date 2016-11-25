@@ -10,12 +10,6 @@
     </head>
     
     <body>
-        
-<!--    <div id="rectangle-left"></div>
-        <div id="triangle-left"></div>
-        <div id="rectangle-right"></div>
-        <div id="triangle-right"></div> -->
-    
         <div class="header-container">
             <h1>
                 <a href="{% url 'HomeView' %}">
@@ -40,6 +34,8 @@
                     <a>about</a>
                 </h2>
             </div>
+            
+            <image class="banner" src="{% static 'blog/mtn-banner.jpg' %}">
         </div>
         
         {% block content %}

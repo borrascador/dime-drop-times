@@ -1,3 +1,46 @@
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */
+  
+  /* Rules go Here */
+}
+
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+  
+}
+
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  
+  /* Rules go Here */
+
+}
+
+
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */  
+  
+  /* Rules go Here */
+
+}
+
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */  
+  
+  /* Rules go Here */
+
+}
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */  
+  
+  /* Rules go Here */
+
+}
+
+
+
 body {
   background: #FFC928;
   color: #111;
@@ -8,7 +51,15 @@ body {
   margin-bottom: 50px;
 }
 
-#picture {
+.banner {
+  width: 50%;
+  display: block;
+/*   margin-left: auto;
+  margin-right: auto; */
+  margin: 0px auto;
+}
+
+.picture {
   width: 100%;
   display: block;
   margin-left: auto;
@@ -16,13 +67,20 @@ body {
   margin-bottom: 50px;
 }
 
+.grid-daddy {
+  width: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
 .grid {
-  margin: 100px;
+  margin: 0px auto;
 }
 
 .grid-sizer, 
 .grid-item {
-  width: 18%;
+  /* width: 30%; */
+  width: 17.843em;
   margin-bottom: 50px;
 }
 
@@ -33,7 +91,7 @@ body {
 }
 
 .gutter-sizer {
-  width: 2.5%;
+  width: 3em;
 }
 
 div.footer-container p {
@@ -80,13 +138,13 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-/* mouse over link and click on link */
+/* mouse over link and clicked link */
 a:hover, a:active {
   color: #111;
   text-decoration: underline;
 }
 
-/* mouse over and click on link for header */
+/* mouse over and clicked link for header */
 h1 a:hover, h1 a:active {
   color: #111;
   text-decoration: none;
