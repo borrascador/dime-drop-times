@@ -1,34 +1,206 @@
+body {
+  /* background: #FFC928; */
+  background: #111;
+  color: #FFF;
+  margin: 0;
+}
+
 @media (min-width:320px)  { 
   /* smartphones, iPhone, portrait 480x320 phones */
   
-  /* Rules go Here */
+  .picture {
+    width: 100%;
+    display: block;
+    margin-bottom: 3em;
+  }
+
+  .banner {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .grid-daddy {
+    width: 20em;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .grid {
+    margin: 0px auto;
+  }
+
+  .grid-sizer, 
+  .grid-item {
+    width: 18em;
+    margin-bottom: 3em;
+  }
+
+  .item-detail {
+    width: 18em;
+    margin: 0px auto;
+    margin-bottom: 3em;
+  }
+
+  .gutter-sizer {
+    width: 3em;
+  }
+
+  div.footer-container p {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  h1 {
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 100px; 
+    font-weight: bold; 
+    line-height: 1; 
+    line-height: 80%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: -1px; 
+  }
+  
+  h2 {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300; 
+    line-height: 32px; 
+    margin: 0 0 px; 
+    text-align: center; 
+  }
+  
+  .header-container h2 {
+    font-size: 16px; 
+  }
+  
+  .grid h2 {
+    font-size: 20px; 
+  }
+
+  /* unvisited and visited links */
+  a:link, a:visited {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  /* mouse over link and clicked link */
+  a:hover, a:active {
+    color: #FFF;
+    text-decoration: underline;
+  }
+
+  /* mouse over and clicked link for header */
+  h1 a:hover, h1 a:active {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  p {
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 16px; 
+    line-height: 24px; 
+    margin: 0 0 0px; 
+    text-align: justify; 
+    text-justify: inter-word; 
+  }
+  
+  .date p {
+    font-size: 12px;
+  }
+  
 }
 
 @media (min-width:481px)  { 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-
+  
+  h1 {
+    font-size: 120px; 
+  }
   
 }
 
 @media (min-width:641px)  { 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
   
-  /* Rules go Here */
+  .banner {
+    width: 38em;
+  }
 
+  .grid-daddy {
+    width: 38em;
+  }
+
+  .grid-sizer, 
+  .grid-item {
+    width: 17em;
+    margin-bottom: 3em;
+  }
+  
+  h1 {
+    font-size: 200px; 
+  }
+  
+  .header-container h2 {
+    font-size: 24px; 
+  }
+  
 }
-
 
 @media (min-width:961px)  { 
   /* tablet, landscape iPad, lo-res laptops ands desktops */  
   
-  /* Rules go Here */
+  .banner {
+    width: 60em;
+  }
 
+  .grid-daddy {
+    width: 60em;
+  }
+
+  .grid-sizer, 
+  .grid-item {
+    width: 18em;
+    margin-bottom: 3em;
+  }
+  
+  .item-detail {
+    width: 30em;
+  }
+  
+  h1 {
+    font-size: 240px; 
+  }
+  
+  .header-container h2 {
+    font-size: 30px; 
+  }
+  
 }
 
 @media (min-width:1025px) { 
   /* big landscape tablets, laptops, and desktops */  
+
+  h1 {
+    font-size: 275px; 
+  }
+
+  #dime {
+    letter-spacing: 21.6px;
+  }
+
+  #drop {
+    letter-spacing: 29.3px;
+  }
+
+  #times {
+    letter-spacing: -1px; 
+  }
   
-  /* Rules go Here */
+  h2 {
+    font-size: 30px; 
+  }
 
 }
 
@@ -37,124 +209,4 @@
   
   /* Rules go Here */
 
-}
-
-
-
-body {
-  background: #FFC928;
-  color: #111;
-  margin: 0;
-}
-
-.nav-bar {
-  margin-bottom: 50px;
-}
-
-.banner {
-  width: 50%;
-  display: block;
-/*   margin-left: auto;
-  margin-right: auto; */
-  margin: 0px auto;
-}
-
-.picture {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
-
-.grid-daddy {
-  width: 50%;
-  display: block;
-  margin: 0px auto;
-}
-
-.grid {
-  margin: 0px auto;
-}
-
-.grid-sizer, 
-.grid-item {
-  /* width: 30%; */
-  width: 17.843em;
-  margin-bottom: 50px;
-}
-
-.item-detail {
-  width: 40%;
-  margin: 0px auto;
-  margin-bottom: 50px;
-}
-
-.gutter-sizer {
-  width: 3em;
-}
-
-div.footer-container p {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-h1 {
-  font-family: 'Helvetica Neue', sans-serif; 
-  font-size: 275px; 
-  font-weight: bold; 
-  line-height: 1; 
-  line-height: 80%;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-#dime {
-  letter-spacing: 21.6px;
-}
-
-#drop {
-  letter-spacing: 29.3px;
-}
-
-#times {
-  letter-spacing: -1px; 
-}
-
-h2 {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 30px; 
-  font-weight: 300; 
-  line-height: 32px; 
-  margin: 0 0 px; 
-  text-align: center; 
-  word-spacing: 18.6px;
-}
-
-/* unvisited and visited links */
-a:link, a:visited {
-  color: #111;
-  text-decoration: none;
-}
-
-/* mouse over link and clicked link */
-a:hover, a:active {
-  color: #111;
-  text-decoration: underline;
-}
-
-/* mouse over and clicked link for header */
-h1 a:hover, h1 a:active {
-  color: #111;
-  text-decoration: none;
-}
-
-p {
-  font-family: 'Helvetica Neue', sans-serif; 
-  font-size: 16px; 
-  line-height: 24px; 
-  margin: 0 0 0px; 
-  text-align: justify; 
-  text-justify: inter-word; 
 }
