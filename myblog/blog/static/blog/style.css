@@ -11,7 +11,7 @@ body {
   .picture {
     width: 100%;
     display: block;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
 
   .banner {
@@ -134,7 +134,7 @@ body {
 
   .grid-sizer, 
   .grid-item {
-    width: 17em;
+    width: 17.5em;
     margin-bottom: 3em;
   }
   
@@ -154,7 +154,11 @@ body {
   .banner {
     width: 60em;
   }
-
+  
+  .picture {
+    margin-bottom: 3em;
+  }
+  
   .grid-daddy {
     width: 60em;
   }
