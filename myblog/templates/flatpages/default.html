@@ -4,7 +4,7 @@
 <html lang="en">
 
     <head>
-        <title>dime drop times</title>
+        <title>{{ flatpage.title }}</title>
         <link rel=StyleSheet type="text/css" href="{% static 'blog/style.css' %}">
         <script type="text/javascript" src="{% static 'blog/masonry.pkgd.js' %}"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,8 +40,11 @@
             </h2>
         </div>
         
-        {% block content %}
-        {% endblock %}
+        <div class="item-detail">
+            <p class="text">
+                {{ flatpage.content }}
+            </p>
+        </div>
         
         <div class="footer-container">
             <!-- Copyright Symbol, Year, Name -->

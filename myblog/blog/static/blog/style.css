@@ -1,5 +1,4 @@
 body {
-  /* background: #FFC928; */
   background: #111;
   color: #FFF;
   margin: 0;
@@ -77,6 +76,16 @@ body {
   
   .grid h2 {
     font-size: 20px; 
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: separate;
+  }
+  
+  td {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   /* unvisited and visited links */
