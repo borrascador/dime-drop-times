@@ -27,15 +27,13 @@
             {% get_flatpages as flatpages %}
             <h2>
                 <table>
-                    <tr>
-                        {% for page in flatpages %}
-                            <td>
-                                <a href="/pages{{ page.url }}">
-                                    {{ page.title }}
-                                </a>
-                            </td>
-                        {% endfor %}
-                    </tr>
+                    {% for page in flatpages %}
+                        <td>
+                            <a href="/pages{{ page.url }}">
+                                {{ page.title }}
+                            </a>
+                        </td>
+                    {% endfor %}
                 </table>
             </h2>
         </div>

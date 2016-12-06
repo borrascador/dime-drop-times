@@ -19,8 +19,16 @@
                     <div class="date">
                         <p>{{ post.created_date }} by {{ post.author }}</p>
                     </div>
-                    <h2><a class="title" href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h2>
-                    <p class="text">{{ post.text|linebreaksbr }}</p>
+                    
+                    <h2>
+                        <a class="title" href="{% url 'PostView' pk=post.pk %}">
+                            {{ post.title }}
+                        </a>
+                    </h2>
+                    
+                    <p class="text">
+                        {{ post.text|linebreaksbr|truncatewords:100 }}
+                    </p>
                 </div>
             {% endfor %}
         </div>
