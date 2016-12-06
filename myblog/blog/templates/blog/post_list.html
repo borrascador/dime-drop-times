@@ -17,7 +17,7 @@
             {% for post in post_list %}
                 <div class="grid-item">
                     <div class="date">
-                        <p>{{ post.created_date }}</p>
+                        <p>{{ post.created_date }} by {{ post.author }}</p>
                     </div>
                     <h2><a class="title" href="{% url 'PostView' pk=post.pk %}">{{ post.title }}</a></h2>
                     <p class="text">{{ post.text|linebreaksbr }}</p>

@@ -1,12 +1,18 @@
 {% extends 'blog/base.html' %}
 
-{% block content %}
-    <img class="picture" src="https://static.pexels.com/photos/474/black-and-white-car-vehicle-vintage.jpg">
+{% load static %}
+
+{% block content %}    
+    <image class="picture" src="{% static 'blog/car-banner.jpg' %}">
         
     <div class="item-detail">  
         {% if views.post.published_date %}
             <div class="date">
-                <p>{{ post.published_date }}</p>
+                <p>{{ post.published_date }} by {{ post.author }}</p>
+            </div>
+        {% else %}
+            <div class="date">
+                <p>by {{ post.author }}</p>
             </div>
         {% endif %}
         <h2>{{ post.title }}</h2>
