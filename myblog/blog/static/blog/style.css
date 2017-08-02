@@ -1,11 +1,11 @@
-body {
-  background: #111;
-  color: #FFF;
-  margin: 0;
-}
-
-@media (min-width:320px)  { 
-  /* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:0px)  { 
+  /* tiny screens, only intended for min-width:220px */
+  
+  body {
+    background: #111;
+    color: #FFF;
+    margin: 0;
+  }
   
   .picture {
     width: 100%;
@@ -18,9 +18,9 @@ body {
     display: block;
     margin: 0px auto;
   }
-
+  
   .grid-daddy {
-    width: 20em;
+    width: 12em;
     display: block;
     margin: 0px auto;
   }
@@ -31,12 +31,12 @@ body {
 
   .grid-sizer, 
   .grid-item {
-    width: 18em;
+    width: 12em;
     margin-bottom: 3em;
   }
 
   .item-detail {
-    width: 18em;
+    width: 12em;
     margin: 0px auto;
     margin-bottom: 3em;
   }
@@ -52,7 +52,7 @@ body {
 
   h1 {
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 100px; 
+    font-size: 64px; 
     font-weight: bold; 
     line-height: 1; 
     line-height: 80%;
@@ -63,7 +63,7 @@ body {
   }
   
   h2 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Helvetica Neue', sans-serif; 
     font-weight: 300; 
     line-height: 32px; 
     margin: 0 0 px; 
@@ -84,8 +84,8 @@ body {
   }
   
   td {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 
   /* unvisited and visited links */
@@ -108,8 +108,8 @@ body {
 
   p {
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 16px; 
-    line-height: 24px; 
+    font-size: 14px; 
+    line-height: 20px; 
     margin: 0 0 0px; 
     text-align: justify; 
     text-justify: inter-word; 
@@ -117,6 +117,63 @@ body {
   
   .date p {
     font-size: 12px;
+  }
+  
+}
+
+@media (min-width:280px) {
+  /* very small screens */
+  
+  .grid-daddy {
+    width: 16em;
+  }
+
+  .grid-sizer, 
+  .grid-item {
+    width: 16em;
+  }
+
+  .item-detail {
+    width: 16em;
+  }
+
+  h1 {
+    font-size: 80px; 
+  }
+
+  p {
+    font-size: 16px; 
+    line-height: 24px; 
+  }
+  
+  td {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */
+  
+  .grid-daddy {
+    width: 20em;
+  }
+
+  .grid-sizer, 
+  .grid-item {
+    width: 18em;
+  }
+
+  .item-detail {
+    width: 18em;
+  }
+
+  h1 {
+    font-size: 100px; 
+  }
+
+  p {
+    font-size: 16px; 
+    line-height: 24px; 
   }
   
 }
@@ -148,7 +205,7 @@ body {
   }
   
   h1 {
-    font-size: 200px; 
+    font-size: 180px; 
   }
   
   .header-container h2 {
