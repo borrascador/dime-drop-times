@@ -38,16 +38,16 @@
   .item-detail {
     width: 12em;
     margin: 0px auto;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 
   .gutter-sizer {
-    width: 3em;
+    width: 2em;
   }
 
   div.footer-container p {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 
   h1 {
@@ -119,6 +119,44 @@
     font-size: 12px;
   }
   
+  form {
+    margin: auto;
+  }
+
+  label {
+    vertical-align: middle;
+  }
+
+  input,
+  textarea {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0px;
+  }
+
+  .button-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    caption-side: bottom;
+    display: table-caption;
+    text-align: center;
+  }
+
+  form button {
+    width: 85%;
+    border-radius: 0px;
+    border: 5px;
+    padding: 20px;
+  }
+
+  form button:hover {
+    background-color: #CCC;
+  }
+  
 }
 
 @media (min-width:280px) {
@@ -150,6 +188,7 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+}
 
 @media (min-width:320px)  { 
   /* smartphones, iPhone, portrait 480x320 phones */
@@ -175,7 +214,7 @@
     font-size: 16px; 
     line-height: 24px; 
   }
-  
+
 }
 
 @media (min-width:481px)  { 
@@ -184,7 +223,10 @@
   h1 {
     font-size: 120px; 
   }
-  
+
+  .item-detail {
+    width: 24em;
+  }  
 }
 
 @media (min-width:641px)  { 
@@ -211,7 +253,49 @@
   .header-container h2 {
     font-size: 24px; 
   }
-  
+
+  form {
+    display: table;
+    margin-left: 0px;
+  }
+
+  form p {
+    display: table-row;
+  }
+
+  label {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  input,
+  textarea {
+    display: table-cell;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0px;
+  }
+
+  .button-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    caption-side: bottom;
+    display: table-caption;
+    text-align: center;
+  }
+
+  form button {
+    width: 85%;
+    border-radius: 0px;
+    border: 5px;
+    padding: 20px;
+  }
+
+  form button:hover {
+    background-color: #CCC;
+  }
+
 }
 
 @media (min-width:961px)  { 
