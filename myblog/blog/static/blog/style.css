@@ -1,12 +1,12 @@
-@media (min-width:0px)  { 
+@media (min-width:0px)  {
   /* tiny screens, only intended for min-width:220px */
-  
+
   body {
     background: #111;
     color: #FFF;
     margin: 0;
   }
-  
+
   .picture {
     width: 100%;
     display: block;
@@ -18,7 +18,7 @@
     display: block;
     margin: 0px auto;
   }
-  
+
   .grid-daddy {
     width: 12em;
     display: block;
@@ -29,7 +29,7 @@
     margin: 0px auto;
   }
 
-  .grid-sizer, 
+  .grid-sizer,
   .grid-item {
     width: 12em;
     margin-bottom: 3em;
@@ -51,38 +51,38 @@
   }
 
   h1 {
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 64px; 
-    font-weight: bold; 
-    line-height: 1; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1;
     line-height: 80%;
     margin-top: 25px;
     margin-bottom: 10px;
     text-align: center;
-    letter-spacing: -1px; 
+    letter-spacing: -1px;
   }
-  
+
   h2 {
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-weight: 300; 
-    line-height: 32px; 
-    margin: 0 0 px; 
-    text-align: center; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 px;
+    text-align: center;
   }
-  
+
   .header-container h2 {
-    font-size: 16px; 
+    font-size: 16px;
   }
-  
+
   .grid h2 {
-    font-size: 20px; 
+    font-size: 20px;
   }
-  
+
   table {
     margin: 0 auto;
     border-collapse: separate;
   }
-  
+
   td {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -107,18 +107,18 @@
   }
 
   p {
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 14px; 
-    line-height: 20px; 
-    margin: 0 0 0px; 
-    text-align: justify; 
-    text-justify: inter-word; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 0px;
+    text-align: justify;
+    text-justify: inter-word;
   }
-  
+
   .date p {
     font-size: 12px;
   }
-  
+
   form {
     margin: auto;
   }
@@ -142,7 +142,6 @@
     margin-top: 20px;
     width: 100%;
     caption-side: bottom;
-    display: table-caption;
     text-align: center;
   }
 
@@ -156,17 +155,17 @@
   form button:hover {
     background-color: #CCC;
   }
-  
+
 }
 
 @media (min-width:280px) {
   /* very small screens */
-  
+
   .grid-daddy {
     width: 16em;
   }
 
-  .grid-sizer, 
+  .grid-sizer,
   .grid-item {
     width: 16em;
   }
@@ -176,28 +175,28 @@
   }
 
   h1 {
-    font-size: 80px; 
+    font-size: 80px;
   }
 
   p {
-    font-size: 16px; 
-    line-height: 24px; 
+    font-size: 16px;
+    line-height: 24px;
   }
-  
+
   td {
     padding-left: 1em;
     padding-right: 1em;
   }
 }
 
-@media (min-width:320px)  { 
+@media (min-width:320px)  {
   /* smartphones, iPhone, portrait 480x320 phones */
-  
+
   .grid-daddy {
     width: 20em;
   }
 
-  .grid-sizer, 
+  .grid-sizer,
   .grid-item {
     width: 18em;
   }
@@ -207,31 +206,31 @@
   }
 
   h1 {
-    font-size: 100px; 
+    font-size: 100px;
   }
 
   p {
-    font-size: 16px; 
-    line-height: 24px; 
+    font-size: 16px;
+    line-height: 24px;
   }
 
 }
 
-@media (min-width:481px)  { 
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-  
+@media (min-width:481px)  {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
   h1 {
-    font-size: 120px; 
+    font-size: 120px;
   }
 
   .item-detail {
     width: 24em;
-  }  
+  }
 }
 
-@media (min-width:641px)  { 
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-  
+@media (min-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
   .banner {
     width: 38em;
   }
@@ -240,23 +239,22 @@
     width: 38em;
   }
 
-  .grid-sizer, 
+  .grid-sizer,
   .grid-item {
     width: 17.5em;
     margin-bottom: 3em;
   }
-  
+
   h1 {
-    font-size: 180px; 
+    font-size: 180px;
   }
-  
+
   .header-container h2 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   form {
     display: table;
-    margin-left: 0px;
   }
 
   form p {
@@ -278,11 +276,8 @@
   }
 
   .button-wrapper {
-    margin-top: 20px;
     width: 100%;
-    caption-side: bottom;
     display: table-caption;
-    text-align: center;
   }
 
   form button {
@@ -298,46 +293,46 @@
 
 }
 
-@media (min-width:961px)  { 
-  /* tablet, landscape iPad, lo-res laptops ands desktops */  
-  
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
   .banner {
     width: 60em;
   }
-  
+
   .picture {
     margin-bottom: 3em;
   }
-  
+
   .grid-daddy {
     width: 60em;
   }
 
-  .grid-sizer, 
+  .grid-sizer,
   .grid-item {
     width: 18em;
     margin-bottom: 3em;
   }
-  
+
   .item-detail {
     width: 30em;
   }
-  
+
   h1 {
-    font-size: 240px; 
+    font-size: 240px;
   }
-  
+
   .header-container h2 {
-    font-size: 30px; 
+    font-size: 30px;
   }
-  
+
 }
 
-@media (min-width:1025px) { 
-  /* big landscape tablets, laptops, and desktops */  
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
 
   h1 {
-    font-size: 275px; 
+    font-size: 275px;
   }
 
   #dime {
@@ -349,18 +344,18 @@
   }
 
   #times {
-    letter-spacing: -1px; 
+    letter-spacing: -1px;
   }
-  
+
   h2 {
-    font-size: 30px; 
+    font-size: 30px;
   }
 
 }
 
-@media (min-width:1281px) { 
-  /* hi-res laptops and desktops */  
-  
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+
   /* Rules go Here */
 
 }

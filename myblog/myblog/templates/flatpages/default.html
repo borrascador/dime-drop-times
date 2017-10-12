@@ -9,9 +9,9 @@
         <script type="text/javascript" src="{% static 'blog/masonry.pkgd.js' %}"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    
+
     <body>
-    
+
         <div class="header-container">
             <h1>
                 <a href="{% url 'HomeView' %}">
@@ -22,7 +22,7 @@
                     <span id="times">times</span>
                 </a>
             </h1>
-            
+
             {% load flatpages %}
             {% get_flatpages as flatpages %}
             <h2>
@@ -34,21 +34,26 @@
                             </a>
                         </td>
                     {% endfor %}
+                    <td>
+                        <a href="/contact">
+                            contact
+                        </a>
+                    </td>
                 </table>
             </h2>
         </div>
-        
+
         <div class="item-detail">
             <p class="text">
                 {{ flatpage.content }}
             </p>
         </div>
-        
+
         <div class="footer-container">
             <!-- Copyright Symbol, Year, Name -->
             <p id="footer-text">&copy; {% now "Y" %} Jan Tabaczynski</p>
         </div>
-        
+
     </body>
-    
+
 </html>
