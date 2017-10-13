@@ -44,12 +44,12 @@ def contact(request):
             email = EmailMessage(
                 "New contact form submission",
                 content,
-                "Your website" +'',
-                ['youremail@gmail.com'],
+                "Dime Drop Times" +'',
+                ['roflbot101@gmail.com'],
                 headers = {'Reply-To': contact_email }
             )
             email.send()
-            return redirect('contact')
+            return redirect('/pages/success')
 
     return render(request, "blog/contact.html", {
         'form': form_class,

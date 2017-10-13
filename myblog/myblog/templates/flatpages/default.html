@@ -4,7 +4,7 @@
 <html lang="en">
 
     <head>
-        <title>{{ flatpage.title }}</title>
+        <title>dime drop times</title>
         <link rel=StyleSheet type="text/css" href="{% static 'blog/style.css' %}">
         <script type="text/javascript" src="{% static 'blog/masonry.pkgd.js' %}"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,22 +23,20 @@
                 </a>
             </h1>
 
-            {% load flatpages %}
-            {% get_flatpages as flatpages %}
             <h2>
                 <table>
-                    {% for page in flatpages %}
+                    <tr>
                         <td>
-                            <a href="/pages{{ page.url }}">
-                                {{ page.title }}
+                            <a href="/pages/about">
+                                about
                             </a>
                         </td>
-                    {% endfor %}
-                    <td>
-                        <a href="/contact">
-                            contact
-                        </a>
-                    </td>
+                        <td>
+                            <a href="/contact">
+                                contact
+                            </a>
+                        </td>
+                    </tr>
                 </table>
             </h2>
         </div>
